@@ -1,0 +1,128 @@
+.skw-topbar {
+    margin: 0 0 0 -20px;
+    padding: 10px 20px 10px 20px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .skw-branding {
+    display: flex;
+    align-items: center;
+  }
+
+  .skw-topbar .skw-branding svg {
+    width: 75px;
+    margin-right: 5px;
+}
+
+  .skw-topbar .skw-branding h1 {
+    margin: 0px 10px 0px 10px;
+  }
+
+
+.skw-content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px 20px 20px;
+    box-sizing: border-box;
+}
+.skw-settings-main-wrapper {
+    width: 75%;
+    height: 100%;
+    margin: 0px 20px 20px 0;
+}
+
+.skw-tabs {
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+h3.skw-title {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    display: inline-block;
+}
+
+.skw-enabled{
+	font-weight:bold;
+}
+
+.skw-module-config{
+	text-decoration: none;
+	margin-left:10px;
+}
+.skw-disabled .skw-module-config{
+	display:none;
+}
+
+.skw-tabs > h3.skw-title.active {
+    border-bottom: 2px solid #2ea2cc;
+}
+
+.skw-tabs h3.skw-settings a{
+	text-decoration: none;
+}
+
+.skw-metabox {
+    margin-bottom: 20px;
+    box-shadow: 0 0 0 1px rgb(200 215 225 / 50%), 0 1px 2px #ddd;
+    background: #fff;
+    border-top: 2px solid #2ea2cc;
+}
+
+.skw-tab-content.active {
+    display: block;
+}
+.skw-tab-content {
+    display: none;
+}
+
+.skw-module-row {
+    background-color: #f7fcfe;
+    padding: 15px 15px 15px 10px;
+    border-left: 5px solid transparent;
+    box-shadow: 0 -1px 0 rgb(0 0 0 / 10%) inset;
+    transition: all 0.2s;
+}
+
+.skw-module-action {
+    float: right;
+}
+
+.skw-module-action a{
+	text-decoration: none;
+}
+
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.skw-module-action a.updating:before {
+	color: #f56e28;
+	content: "\f463";
+	font: normal 20px/1 "dashicons";
+	display: inline-block;
+	vertical-align: top;
+	animation: spinner 2s infinite linear;
+	margin-right: 2px;
+}
+
+/* .woocommerce-button.skw-reorder.button{
+    color: white;
+    background-color: black;
+} */
+
+/* .woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-actions{
+    white-space: nowrap !important;
+} */
